@@ -285,7 +285,7 @@ inline int64_t RemoveItemOnMap(Map& map, RemoveIfType& condition, bool selectedO
 }
 
 template <typename RemoveIfType>
-inline int64_t RemoveItemDuplicateOnMap(Map &map, RemoveIfType &condition, bool selectedOnly) {
+inline int64_t RemoveItemDuplicateOnMap(Map& map, RemoveIfType& condition, bool selectedOnly) {
 	int64_t done = 0;
 	int64_t removed = 0;
 
