@@ -199,6 +199,11 @@ MainMenuBar::MainMenuBar(MainFrame* frame) :
 	MAKE_ACTION(GOTO_WEBSITE, wxITEM_NORMAL, OnGotoWebsite);
 	MAKE_ACTION(ABOUT, wxITEM_NORMAL, OnAbout);
 
+	MAKE_ACTION(SEARCH_ON_MAP_DUPLICATE, wxITEM_NORMAL, OnSearchForDuplicateItemsOnMap);
+	MAKE_ACTION(SEARCH_ON_SELECTION_DUPLICATE, wxITEM_NORMAL, OnSearchForDuplicateItemsOnSelection);
+	MAKE_ACTION(REMOVE_ON_MAP_DUPLICATE_ITEMS, wxITEM_NORMAL, OnRemoveForDuplicateItemsOnMap);
+	MAKE_ACTION(REMOVE_ON_SELECTION_DUPLICATE_ITEMS, wxITEM_NORMAL, OnRemoveForDuplicateItemsOnSelection);
+
 	// A deleter, this way the frame does not need
 	// to bother deleting us.
 	class CustomMenuBar : public wxMenuBar {
