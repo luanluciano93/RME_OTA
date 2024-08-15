@@ -2212,7 +2212,6 @@ void MainMenuBar::RemoveDuplicatesItems(bool onSelection/* = false*/) {
 	int ok = g_gui.PopupDialog("Remove Duplicate Items", "Do you want to remove all duplicates items from the map?", wxYES | wxNO);
 
 	if(ok == wxID_YES) {
-		g_gui.GetCurrentEditor()->selection.clear();
 		g_gui.GetCurrentEditor()->actionQueue->clear();
 
 		RemoveDuplicatesItems::condition func;
